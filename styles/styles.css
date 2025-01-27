@@ -1,24 +1,23 @@
 /* shared styles */
 
-*{
+* {
     /* background-color: #AAAAAA; */
     margin: 0;
     padding: 0;
     box-sizing: border-box
-    
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-.poppins-thin{
+.poppins-thin {
     font-family: "Poppins", serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
 
-  .clr-1{
+.clr-1 {
     color: #3A3A3A;
 }
 
@@ -26,76 +25,82 @@
 
 /* navbar related style */
 
-header{
+header {
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 80px;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     gap: 30px;
     text-align: center;
     align-items: center;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
 }
 
-.nav-title{
+.nav-title {
     font-size: 24px;
     font-weight: bold;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
-    color: #3A3A3A; 
-    font-weight: 500; 
+    color: #3A3A3A;
+    font-weight: 500;
 }
 
-.navbar ul li img{
+.navbar ul li img {
     height: 24px;
 }
-#img img{
+
+#img img {
     height: 40px;
 }
 
 /* banner related styles */
 
-.bannar{
+.bannar {
     display: flex;
     align-items: center;
     gap: 120px;
     margin-top: 45px;
 }
-.content-title{
+
+.content-title {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
 }
-.content-description{
+
+.content-description {
     font-weight: 600;
     width: 500PX;
     margin-top: 0;
     margin-bottom: 16px;
 }
-.content-button{
+
+.content-button {
     background-color: #E02C6D;
     padding: 15px 35px;
     border-radius: 40px;
+    border: none;
     margin-top: 10px;
     color: white;
     font-weight: bold;
 }
 
-.bannar-img{
+.bannar-img {
     background-image: url(../images/Circle\ design.svg);
     padding-right: 35px;
     padding-bottom: 25px;
@@ -108,13 +113,13 @@ header{
 
 /* sponsor related styles */
 
-.sponsor{
+.sponsor {
     max-width: 1100px;
     margin: 0 auto;
     margin-top: 65px;
 }
 
-.sponsor-container{
+.sponsor-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -125,53 +130,56 @@ header{
 }
 
 /* collection section styles */
-.collection{
+.collection {
     max-width: 1000px;
     margin: 100px auto;
 }
 
-.collection-title{
+.collection-title {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.item-container{
+.item-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 30px;
 }
 
-.item{
+.item {
     box-shadow: 20px 20px rgba(128, 128, 128, 0.055);
-    padding: 15px; 
+    padding: 15px;
 }
 
-.item-name{
+.item-name {
     font-size: 500;
     margin-top: 16px;
     margin-bottom: 6px;
 }
-.item-price{
+
+.item-price {
     font-size: 24px;
 }
-.star{
+
+.star {
     color: orangered;
 }
 
-.rate{
+.rate {
     font-size: 14px;
     font-weight: bold;
 }
-.item-description{
+
+.item-description {
     width: 180px;
     font-size: 14px;
     font-weight: bold;
 }
 
-.item-button{
+.item-button {
     color: #E02C6D;
     border: none;
     width: 100%;
@@ -179,54 +187,126 @@ header{
     margin-top: 30px;
 }
 
+/* featured section style */
+.featured {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
 
-@media screen and (max-width:576px){
-    header{
+.featured-content {
+    height: 220px;
+}
+
+.featured-content-title{
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.featured-content-detail{
+    color: #6C6C6C;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.featured-button{
+    background-color: #E02C6D;
+    padding: 15px 35px;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+footer{
+    background-color: navy;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+footer .container{
+    width: 260px;
+    height: 140px;
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+}
+
+footer .container .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.description{
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer-images{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+.footer-images img{
+    width: 32px;
+    height: 31px;
+}
+@media screen and (max-width:576px) {
+    header {
         max-width: auto;
         margin: none;
     }
-    .navbar{
+
+    .navbar {
         max-width: auto;
         flex-direction: column;
         text-align: center;
     }
 
-    .navbar ul{
+    .navbar ul {
         padding-left: 0;
         gap: 10px;
-        
+
     }
 
     /* .navbar ul{
         justify-content: space-around;
     } */
 
-    .bannar{
+    .bannar {
         flex-direction: column-reverse;
         gap: 0;
-        
+
     }
-    .bannar-content{
+
+    .bannar-content {
         width: 100%;
         text-align: center;
     }
-    .content-description{
+
+    .content-description {
         width: 100%;
     }
-    .bannar-img{
+
+    .bannar-img {
+        background-repeat: no-repeat;
+        background-position: center;
         width: 100%;
         padding: 0;
         margin: 0;
     }
-    .bannar-img img{
+
+    .bannar-img img {
         width: 90%;
         height: auto;
     }
 
-    .sponsor{
+    .sponsor {
         width: 100%;
     }
-    .sponsor-container{
+
+    .sponsor-container {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
@@ -235,19 +315,31 @@ header{
         border: none;
         overflow: hidden;
     }
-    .sponsor-container img{
+
+    .sponsor-container img {
         height: auto;
     }
 
-    .collection{
+    .collection {
         max-width: 100%;
         margin: 0;
         margin-top: 50px;
-}
+    }
 
-.item-container{
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 0;
-}
+    .item-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 0;
+    }
+    .item img{
+        width: 100%;
+    }
+    .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 0;
+        margin-top: 50px;
+    }
 
-}
+
+    }
+
